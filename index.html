@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Wordle Game</h1>
-    <p>Guess the secret 5-letter word within 6 attempts.</p>
-    <input type="text" id="guess-input" maxlength="5" />
-    <button id="submit-guess">Submit Guess</button>
-    <div id="feedback"></div>
-    <div id="attempts-remaining">Attempts remaining: <span id="attempts">6</span></div>
+    <div class="container">
+        <h1 class="my-4">Wordle Game</h1>
+        <p>Guess the secret 5-letter word within 6 attempts.</p>
+        <div class="form-group">
+            <input type="text" class="form-control" id="guess-input" maxlength="5" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" id="submit-guess">Submit Guess</button>
+        </div>
+        <div id="feedback"></div>
+        <div id="attempts-remaining">Attempts remaining: <span id="attempts">6</span></div>
+    </div>
+    <!-- Add jQuery and Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="wordle.js"></script>
 </body>
 </html>
